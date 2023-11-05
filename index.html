@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Flutter Developer</p>
+                <h1>Hi, I'm <span>Rajat</span><br>Sharma</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a versatile Individual pursuing CSE at Vellore Institute of Technology (VIT) Bhopal, with a strong focus on Flutter/Android Mobile Application Development. <br><br>
+                        My expertise lies in crafting seamless and user-friendly mobile experiences, turning complex web and app design concepts into visually stunning and intuitive interfaces, and creating elegant UI/UX designs. <br><br> I also actively contribute to the open source and developer communities.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br>Building Flutter/Android apps</li>
+                            <li><span>Web Development</span><br>Building responsive websites</li>
+                            <li><span>Cloud Computing</span><br>Managing and automating cloud resources, with services like GCP, Azure and AWS.</li>
+                            <li><span>Open Source Contributor</span><br>Powering innovation, collaboration, and endless possibilities for a better tomorrow</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2023</span><br>Flutter Developer at Grocito Online Pvt. Ltd.</li>
+                            <li><span>2022 - 2023</span><br>Dev-Code Technical member</li>
+                            <li><span>2021-2022</span><br>Unacademy Ambassador</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B.tech (Vellore Institute of Technology, Bhopal)</li>
+                            <li><span>2020</span><br>Class XII (St. Mary's Convent School, Mughalsarai)</li>
+                            <li><span>2018</span><br>Class X (St. Mary's Convent School, Mughalsarai)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------services----------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aperiam nulla illo incidunt iusto laborum quod? Officiis, ullam expedita! Enim quae sit provident ducimus perspiciatis. Hic repudiandae deserunt sit harum.</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aperiam nulla illo incidunt iusto laborum quod? Officiis, ullam expedita! Enim quae sit provident ducimus perspiciatis. Hic repudiandae deserunt sit harum.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Open Source</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aperiam nulla illo incidunt iusto laborum quod? Officiis, ullam expedita! Enim quae sit provident ducimus perspiciatis. Hic repudiandae deserunt sit harum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Agrotech App</h3>
+                        <p>This app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/Rajat119/AgrotechApp"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>File-Q App</h3>
+                        <p>This app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/tanmay233/project2"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Gym App</h3>
+                        <p>This app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/Rajat119/gym_app"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------contact--------------------- -->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i><a href="mailto:rajatsharma3327759@gmail.com">rajatsharma3327759@gmail.com</a></p>
+                    <p><i class="fas fa-phone-square"></i> 7310161763</p>
+                    <p><i class="fas fa-location-dot"></i> Patel Nagar, Mughalsarai, India</p>
+                
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7214.917541440043!2d83.1115991380197!3d25.28878601060795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3ae0aee29c31%3A0x1df4fb656a0d25cc!2sPatel%20Nagar%2C%20Mughalsarai%2C%20Uttar%20Pradesh%20232101!5e0!3m2!1sen!2sin!4v1697270786291!5m2!1sen!2sin" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009043326502&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/Rajat_119?t=VnHlLesW8a4HOUvLqTm4kQ&s=09"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/rajat_sharma119?igshid=YTQwZjQ0NmI0OA=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rajat-sharma-063b69132/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span class="msg">hi</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><p>Copyright © Rajat. Made with <i class="fas fa-heart"></i> by Rajat Sharma</p></div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6C5C-BUb3ryY-_5ppdR312zKnXzN0jCOte6Xpdqc-QY-aXyp5eehdigpBttMaPAsN/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
